@@ -1,9 +1,82 @@
+body {
+  background-image: url(img/what-the-hex.png);
+}
+
 .jumbotron {
-  padding-top: 6rem;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
   background-color: #fdb36e;
 }
 
+#about {
+  padding-top: 0;
+}
+
+#skills {
+  padding-top: 10rem;
+}
+
+/* font */
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(../fonts/BebasNeue-Regular.woff) format('woff');
+}
+
+/* style utama */
+.container1 {
+  font: 18px/36px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+  justify-content: center;
+}
+
+.container2 {
+  padding: 20px;
+  margin-left: 16%;
+}
+
+.gallery li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 5px solid #fdb36e;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.gallery li,
+.gallery li img,
+.gallery li span {
+  border-radius: 50%;
+}
+
+.gallery li span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: #333;
+  text-shadow: 1px 1px 1px #ddd;
+  opacity: 0;
+  transform: scale(0) rotate(0);
+  transition: 0.3s;
+}
+
+.gallery li a:hover span {
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+
+.clear {
+  clear: both;
+}
+
 #projects {
+  padding-top: 4rem;
   background-color: #fdb36e;
 }
 
